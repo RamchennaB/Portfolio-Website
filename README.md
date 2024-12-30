@@ -15,8 +15,7 @@ Welcome to my personal portfolio website! This website showcases my projects, sk
  https://portfolio-website-kappa-hazel.vercel.app/ 
 
 ## Contact
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [your-github-profile](https://github.com/your-username)
-- **LinkedIn**: [your-linkedin-profile](https://linkedin.com/in/your-profile)
+- **Email**: ramchenna07@gmail.com
+- **LinkedIn**:https://www.linkedin.com/in/ramchennab/
 
 Thank you for visiting!
