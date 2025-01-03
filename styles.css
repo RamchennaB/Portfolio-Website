@@ -1,3 +1,11 @@
+        :root{
+            --orange:#ffa500;
+            --blue:#1e90ff;
+            --yellow:#FFFF00;
+            --green:#008631;
+            --red:#FF0000;
+
+        }
         * {
             margin: 0;
             padding: 0;
@@ -161,6 +169,21 @@
             font-size: 3rem;
             margin-bottom: 1rem;
             color: #3498db;
+        }
+        #html{
+           color:var(--orange); 
+        }
+        #js{
+            color:var(--yellow);
+        }
+        #git{
+            color:var(--orange);
+        }
+        #nodejs{
+            color:var(--green);
+        }
+        #java{
+            color:var(--red);
         }
          /* About Section */
          #about {
