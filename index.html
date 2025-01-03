@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="styles.css" rel="stylesheet"/>
+    <link rel="icon" href="https://as1.ftcdn.net/v2/jpg/04/99/22/32/1000_F_499223288_elRqWptLXDqDh1izIH38UVZITsyAG2UM.jpg">
     <title>Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
+    
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    
 
     <section id="home" class="hero">
         <div class="hero-content">
@@ -88,6 +99,48 @@
             </div>
         </div>
     </section>
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-java"></i>
+                <h3>java</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+        </div>
+    </section>
+       <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>I am an MCA graduate from Mangalore University with a strong foundation in frontend development, software development, programming, and problem-solving. I have worked on several impactful projects, including a chat application, a signature matching application, a web scraping project for restaurant information, and an Internshala automation project. I have deployed applications on platforms like Render and Vercel, showcasing my ability to take projects from development to deployment. 
+            My technical skills include programming in C/C++, Java, and Python, scripting in Bash, and using tools like Git/GitHub for version control. I am also knowledgeable in data modeling, machine learning algorithms, and techniques like clustering, regression, classification, and hyperparameter tuning. With additional familiarity in REST interfaces, Linux systems, and software-defined networking, I am passionate about leveraging these skills to create innovative, high-performance software solutions.</p>
+        </section>
 
     <section id="contact" class="contact">
         <h2 class="section-title">Get In Touch</h2>
@@ -104,6 +157,10 @@
             </div>
             <button type="submit" class="submit-button">Send Message</button>
         </form>
+        <div class="social-links">
+            <a href="https://github.com/RamchennaB"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ramchennab/"><i class="fab fa-linkedin"></i></a>
+        </div>
     </section>
     <script src="script.js" >  </script>
 </body>
