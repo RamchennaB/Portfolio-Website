@@ -1,9 +1,10 @@
         :root{
-            --orange:#ffa500;
+            --orange:#ff4500;
             --blue:#1e90ff;
             --yellow:#FFFF00;
             --green:#008631;
             --red:#FF0000;
+            --black:#000000;
 
         }
         * {
@@ -185,12 +186,24 @@
         #java{
             color:var(--red);
         }
+        #mongo{
+            color:var(--green);
+        }
+        #linux{
+            color:var(--red);
+        }
+        #virtualization{
+            color:var()
+        }
          /* About Section */
          #about {
             padding: 5rem 2rem;
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
+        }
+        #content1, #content2{
+            margin-bottom: 10px;
         }
 
 

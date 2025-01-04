@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.projects {
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+.project-wrapper {
+    display: flex;
+    transition: transform 0.3s ease-out;
+    gap: 30px;
+    padding: 10px;
+}
+
+.project-card {
+    min-width: 300px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: grab;
+    user-select: none;
+        }
+
+.project-card.active {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.project-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-info h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-info p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: #333;
+}
+
+@media (min-width: 768px) {
+    .project-card {
+        min-width: calc(100% - 60px);
+    }
+}
+</style>
+</head>
+<body>
+
+<section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-grid">
+        <div class="project-wrapper">
+            <div class="project-card active">
+                <div class="project-image">
+                    <img src="https://www.appdupe.com/blog/wp-content/uploads/2021/02/Online-Restaurant-Reservation-App-768x432.png" alt="Restaurant"/>
+                </div>
+                <div class="project-info">
+                    <h3>Restaurant Table Reservation & Food Pickup System</h3>
+                    <p>Developed a web application using React for the Restaurant Table Reservation managing backend data VYA Business, for a client based in Luxembourg.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://play-lh.googleusercontent.com/jYcOggnc4YHS6kIQS3r9nYF39Ti3uVLP3EBJruWal20PNwxzLBaOz4TNhCNcEvPF3ird" alt="Internshala"/>
+                </div>
+                <div class="project-info">
+                    <h3><a href="">Internshala Automation Project</a></h3>
+                    <p>Automated resume creation and internship applications on the Intern Shala portal using Puppeteer, Node.js, and JavaScript, reducing time while making the process more efficient.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://accure.ai/wp-content/uploads/2023/02/Image-Verification-1024x276.webp" alt="Signature Matching"/>
+                </div>
+                <div class="project-info">
+                    <h3><a href="">Signature Matching</a></h3>
+                    <p>Signature Matching application using OpenCV and scikitimage to compare signatures via SSIM (Structural Similarity Index), allowing users to upload or capture images and receive a visual and percentage-based similarity result.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.demandhub.co/assets/images/demandhub/webchat/Webchat-1_1600.png" alt="Chat App"/>
+                </div>
+                <div class="project-info">
+                    <h3><a href="https://github.com/RamchennaB/Chat-Application">Realtime Chat App</a></h3>
+                    <p>Built a real-time chat application using React.js, Socket.IO, and Node.js, with secure authentication via JWT and a modern UI designed with Tailwind CSS for seamless bidirectional communication.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/2486203505/display_1500/stock-vector-weather-icon-set-forecast-weather-flat-symbols-2486203505.jpg" alt="Weather Application"/>
+                </div>
+                <div class="project-info">
+                    <h3><a href="https://react-weather-app-odpe.onrender.com/">Weather Application</a></h3>
+                    <p>Crafted an intuitive ReactJS application that dynamically presents real-time weather details and 5-day forecasts for any location, ensuring a seamless user experience.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://www.codewithfaraz.com/img/Quiz%20Application%20with%20HTML,%20CSS,%20and%20JavaScript.jpg" alt="Quiz Application"/>
+                </div>
+                <div class="project-info">
+                    <h3><a href="https://github.com/RamchennaB/Quiz-Application">Quiz Application</a></h3>
+                    <p>Quiz application designed to test users on various topics. Whether you're looking to create quizzes for educational purposes or just want to challenge your friends, this application provides a flexible and easy-to-use platform.</p>
+                </div>
+            </div>
+        </div>
+        <div class="navigation"></div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const wrapper = document.querySelector('.project-wrapper');
+    const cards = document.querySelectorAll('.project-card');
+    const navigation = document.querySelector('.navigation');
+    
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let isDragging = false;
+    let currentIndex = 0;
+    
+    // Create navigation dots
+    cards.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToCard(index));
+        navigation.appendChild(dot);
+    });
+
+    // Touch events
+    wrapper.addEventListener('touchstart', startDragging);
+    wrapper.addEventListener('touchmove', drag);
+    wrapper.addEventListener('touchend', stopDragging);
+
+    // Mouse events
+    wrapper.addEventListener('mousedown', startDragging);
+    wrapper.addEventListener('mousemove', drag);
+    wrapper.addEventListener('mouseup', stopDragging);
+    wrapper.addEventListener('mouseleave', stopDragging);
+
+    function startDragging(event) {
+        isDragging = true;
+        startX = getPositionX(event);
+        wrapper.style.transition = 'none';
+    }
+
+    function drag(event) {
+        if (!isDragging) return;
+        event.preventDefault();
+        
+        const currentPosition = getPositionX(event);
+        const diff = currentPosition - startX;
+        const translate = prevTranslate + diff;
+        
+        setTransform(translate);
+    }
+
+    function stopDragging() {
+        isDragging = false;
+        const movedBy = currentTranslate - prevTranslate;
+        
+        if (movedBy < -100 && currentIndex < cards.length - 1) {
+            currentIndex++;
+        }
+        if (movedBy > 100 && currentIndex > 0) {
+            currentIndex--;
+        }
+        
+        goToCard(currentIndex);
+    }
+
+    function getPositionX(event) {
+        return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+    }
+
+    function setTransform(translate) {
+        currentTranslate = translate;
+        wrapper.style.transform = `translateX(${translate}px)`;
+    }
+
+    function goToCard(index) {
+        currentIndex = index;
+        const cardWidth = cards[0].offsetWidth + 30; // Including gap
+        const translate = -index * cardWidth;
+        
+        wrapper.style.transition = 'transform 0.3s ease-out';
+        setTransform(translate);
+        prevTranslate = translate;
+        
+        // Update active states
+        cards.forEach((card, i) => {
+            card.classList.toggle('active', i === index);
+        });
+        
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+});
+</script>
+
+</body>
+</html>
